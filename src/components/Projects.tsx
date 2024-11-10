@@ -72,18 +72,21 @@ const Projects = () => {
               href={project.link}
               key={project.id}
               className="border shadow-md bg-blue-300 p-2 rounded 
-              transition-all delay-75 hover:scale-105 place-content-center"
+              transition-all delay-75 hover:scale-105 place-items-center"
             >
-              <div className=" w-[173px] md:w-[220px] overflow-hidden ">
+              <div className="w-[173px] flex px-2">
                 <Image
-                  className="aspect-video rounded-sm max-w-[92%]"
+                  className="aspect-video rounded-sm"
                   src={project.image}
                   alt={project.title}
                   width={190}
                   height={190}
+                  loading="lazy"
                 />
               </div>
-              <span>{project.title}</span>
+              <span className="text-left text-slate-800 font-medium">
+                {project.title}
+              </span>
             </Link>
           );
         })}
