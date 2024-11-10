@@ -1,0 +1,22 @@
+.hero{
+  background-image: linear-gradient(to bottom right, #0086fa, #4484fb, #679eff, #b3d2ff, #ebf3ff);
+}
+.shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+.shapeFill {
+  fill: #FFFFFF;
+}
