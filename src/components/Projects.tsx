@@ -8,6 +8,7 @@ import jmc from "../../public/jmc.png";
 import password from "../../public/password.png";
 import url from "../../public/url.png";
 import typping from "../../public/typping.png";
+import moonligh from "../../public/moonligh.png";
 
 const projects = [
   {
@@ -22,11 +23,18 @@ const projects = [
     image: ecommerce,
     link: "https://dyams-shop.vercel.app/",
   },
+
   {
     id: 3,
     title: "Admin Panel",
     image: admin,
     link: "https://admin-dashboard-nu-plum.vercel.app/",
+  },
+  {
+    id: 0,
+    title: "Moonlight Photogarphy",
+    image: moonligh,
+    link: "https://moonlight-photography-three.vercel.app/",
   },
   {
     id: 4,
@@ -72,7 +80,7 @@ const Projects = () => {
               href={project.link}
               key={project.id}
               className="border shadow-md bg-blue-300 p-2 rounded 
-              transition-all delay-75 hover:scale-105 place-items-center"
+              transition-all delay-75 hover:scale-105 place-items-center h-fit"
             >
               <div className="w-[173px] flex px-2">
                 <Image
